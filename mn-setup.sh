@@ -13,25 +13,19 @@ YELLOW=$(echo  '\033[00;33m')
 
 echo "${Green}Im Starting to update!"
 
-sudo apt-get update
+sudo apt-get update \
 
 
 echo "${Green}I've Finished updating! Now I need to upgrade."
 
-sudo apt-get upgrade
-
+sudo apt-get upgrade \
 
 echo "${Green}I've finished upgrading! Now I need to install dependencies"
-
-sudo apt-get install nano unzip software-properties-common
-
-sudo apt-get install libboost-system-dev libboost-filesystem-dev libboost-chrono-dev
-
-sudo apt-get install libboost-program-options-dev libboost-test-dev libboost-thread-dev
-
-sudo apt-get install libminiupnpc-dev libzmq3-dev
-
-sudo apt-get install htop
+sudo apt-get install nano unzip software-properties-common \
+sudo apt-get install libboost-system-dev libboost-filesystem-dev libboost-chrono-dev \
+sudo apt-get install libboost-program-options-dev libboost-test-dev libboost-thread-dev \
+sudo apt-get install libminiupnpc-dev libzmq3-dev \
+sudo apt-get install htop \
 sudo add-apt-repository ppa:bitcoin/bitcoin
 
 sudo apt-get update
